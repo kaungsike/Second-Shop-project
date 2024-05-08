@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./shopping-app-ecommerce-svgrepo-com.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-black text-white">
+    <main id="app" class="flex flex-col min-h-screen">
+      <header class="border-b border-b-zinc-400">
+        <div class="container py-2 mx-auto flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold">Product Show Case</h1>
+            <p class="text-sm text-zinc-400">Ecommerce</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button
+              type="button"
+              class="flex justify-center items-center size-[46px] text-sm font-semibold rounded-lg border border-transparent bg-white text-black disabled:opacity-50 hover:bg-zinc-400 duration-150  disabled:pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 pointer-events-none stroke-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="flex justify-center items-center size-[46px] text-sm font-semibold rounded-lg border border-transparent bg-white text-black disabled:opacity-50 disabled:pointer-events-none hover:bg-zinc-400 duration-150 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 pointer-events-none stroke-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section id="categorySection">
+        <div class="container mx-auto py-3">
+          <h4 class="mb-2">Product Categories</h4>
+          <div class="flex gap-2">
+            <button class="border border-zinc-400 px-4 py-1 rounded bg-white text-black">All</button>
+            <button class="border border-zinc-400 px-4 py-1 rounded">Electronic</button>
+            <button class="border border-zinc-400 px-4 py-1 rounded">Jewelry</button>
+            <button class="border border-zinc-400 px-4 py-1 rounded">Men's Clothing</button>
+            <button class="border border-zinc-400 px-4 py-1 rounded">Women's Clothing</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="productSection" class="py-3">
+        <div class="container mx-auto py-3">
+          <h4 class="mb-2">Sale Products</h4>
+          <div class="flex gap-2">
+            <div>
+              <img class="w-44 h-44" src="https://api.lorem.space/image/fashion?w=640&h=480&r=7943" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="bg-black mt-auto py-4 border-t border-t-zinc-400">
+        <div class="container mx-auto flex items-center justify-between">
+          <p>
+            Copyright &copy; 2024 by
+            <a
+              class="underline underline-offset-2 text-zinc-400"
+              href="https://github.com/kaungsike"
+            >
+              kaungsike</a
+            >
+          </p>
+          <button
+            type="button"
+            class="flex justify-center items-center size-[46px] text-sm font-semibold rounded-lg border border-transparent bg-white text-black hover:bg-zinc-400 duration-150 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 pointer-events-none"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 18.75 7.5-7.5 7.5 7.5"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 7.5-7.5 7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
