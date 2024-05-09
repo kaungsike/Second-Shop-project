@@ -1,3 +1,7 @@
+export const brands = [
+    "Nike","New Balance"
+];
+
 export const products = [
     {
         id : 1,
@@ -16,6 +20,10 @@ export const products = [
         name : "Nike Air Force 1 Low",
         brand : "nike",
         img : "https://images.footlocker.com/is/image/EBFL2/D2920111?wid=200&hei=200&fmt=png-alpha",
+        brandImg : {
+            white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
+            black : "https://www.svgrepo.com/show/303214/nike-4-logo.svg"
+        },
         price : 98.05,
         rating : 4.7,
 
@@ -244,7 +252,12 @@ export const products = [
         price :159.99 ,
         rating :4.5 ,
     }, 
-    // {
+
+
+  ] 
+  
+  
+  // {
     //     id :,
     //     name : "",
     //     brand : "new-balance",
@@ -252,6 +265,3 @@ export const products = [
     //     price : ,
     //     rating : ,
     // }, 
-
-
-  ]
