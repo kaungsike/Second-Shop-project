@@ -1,6 +1,9 @@
-import { categoryNameGroupHandler } from "../app/handler"
-import { categoryNameGroup } from "./selector"
+import { categoryNameGroupHandler, productGroupHandler } from "../app/handler"
+import { categoryNameGroup, productGroup } from "./selector"
 
-export const listener = () => {
-    categoryNameGroup.addEventListener("click",categoryNameGroupHandler)
+const listener = () => {
+    categoryNameGroup.addEventListener("click",categoryNameGroupHandler);
+    productGroup.addEventListener("click",productGroupHandler)
 }
+
+export default listener;

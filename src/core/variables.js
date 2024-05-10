@@ -6,7 +6,7 @@ export const products = [
     {
         id : 1,
         name : "Nike Air Force 1 '07 LE",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/W2288111?wid=267&hei=267&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -16,9 +16,33 @@ export const products = [
         rating : 4.6,
     },
     {
+        id :11,
+        name : "New Balance 9060",
+        brand : "New Balance",
+        img : "https://images.footlocker.com/is/image/EBFL2/98893005?wid=200&hei=200&fmt=png-alpha",
+        price : 164.99,
+        brandImg : {
+            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
+            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
+        },
+        rating : 4.9,
+    }, 
+    {
+        id :17,
+        name : "New Balance MR530",
+        brand : "New Balance",
+        img : "https://images.footlocker.com/is/image/EBFL2/MR530RB?wid=213&hei=213&fmt=png-alpha",
+        brandImg : {
+            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
+            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
+        },
+        price : 99.99,
+        rating : 4.6,
+    }, 
+    {
         id : 2,
         name : "Nike Air Force 1 Low",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/D2920111?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -29,9 +53,21 @@ export const products = [
 
     }, 
     {
+        id :12,
+        name : "New Balance 574",
+        brand : "New Balance",
+        img : "https://images.footlocker.com/is/image/EBFL2/WL574FLR?wid=200&hei=200&fmt=png-alpha",
+        brandImg : {
+            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
+            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
+        },
+        price : 79.99,
+        rating : 4.9,
+    }, 
+    {
         id :3,
         name : "Nike Air Force 1 '07 LE Low",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/D8959100?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -42,9 +78,21 @@ export const products = [
 
     }, 
     {
+        id :13,
+        name : "New Balance Two Way",
+        brand : "New Balance",
+        img : "https://images.footlocker.com/is/image/EBFL2/BB2WYBB4?wid=200&hei=200&fmt=png-alpha",
+        brandImg : {
+            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
+            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
+        },
+        price : 130.00,
+        rating : 4.8,
+    }, 
+    {
         id :4,
         name : "Nike Air Force 1 Shadow",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/I0919100?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -57,7 +105,7 @@ export const products = [
     {
         id :5,
         name : "Nike Air Force 1 '07 FL",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/Z4627400?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -70,7 +118,7 @@ export const products = [
     {
         id :6,
         name : "Nike Air Force 1 '07 ESS",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/F4146101?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -83,7 +131,7 @@ export const products = [
     {
         id :7,
         name : "Nike Air Force 1 '07 FL",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/Z4627800?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -96,7 +144,7 @@ export const products = [
     {
         id :8,
         name : "Nike Air Force 1 Shadow CE",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/Q8885100?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -109,7 +157,7 @@ export const products = [
     {
         id :9,
         name : "Nike Air Force 1 '07 LV8 EMB",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/F4833001?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -122,7 +170,7 @@ export const products = [
     {
         id :10,
         name : "Nike Air Force 1 High '07 LE",
-        brand : "nike",
+        brand : "Nike",
         img : "https://images.footlocker.com/is/image/EBFL2/W2290111?wid=200&hei=200&fmt=png-alpha",
         brandImg : {
             white : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9uqXx0mZp7JtfrZFtNrXXltETL4zjW1jFDjMi2I-zg&s",
@@ -132,46 +180,11 @@ export const products = [
         rating : 3.6,
 
     }, 
-    {
-        id :11,
-        name : "New Balance 9060",
-        brand : "new-balance",
-        img : "https://images.footlocker.com/is/image/EBFL2/98893005?wid=200&hei=200&fmt=png-alpha",
-        price : 164.99,
-        brandImg : {
-            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
-            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
-        },
-        rating : 4.9,
-    }, 
-    {
-        id :12,
-        name : "New Balance 574",
-        brand : "new-balance",
-        img : "https://images.footlocker.com/is/image/EBFL2/WL574FLR?wid=200&hei=200&fmt=png-alpha",
-        brandImg : {
-            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
-            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
-        },
-        price : 79.99,
-        rating : 4.9,
-    }, 
-    {
-        id :13,
-        name : "New Balance Two Way",
-        brand : "new-balance",
-        img : "https://images.footlocker.com/is/image/EBFL2/BB2WYBB4?wid=200&hei=200&fmt=png-alpha",
-        brandImg : {
-            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
-            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
-        },
-        price : 130.00,
-        rating : 4.8,
-    }, 
+
     {
         id :14,
         name : "New Balance 574 Core",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/GC574EVK?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
@@ -183,7 +196,7 @@ export const products = [
     {
         id :15,
         name : "New Balance 480 Low",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/BB480L3W?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
@@ -195,7 +208,7 @@ export const products = [
     {
         id :16,
         name : "New Balance CT 574",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/CT574GYT?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
@@ -204,22 +217,11 @@ export const products = [
         price : 49.99,
         rating : 4.6,
     }, 
-    {
-        id :17,
-        name : "New Balance MR530",
-        brand : "new-balance",
-        img : "https://images.footlocker.com/is/image/EBFL2/MR530RB?wid=213&hei=213&fmt=png-alpha",
-        brandImg : {
-            white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
-            black : "https://seeklogo.com/images/N/New_Balance-logo-F34722CB97-seeklogo.com.png",
-        },
-        price : 99.99,
-        rating : 4.6,
-    }, 
+
     {
         id :18,
         name : "New Balance 574 Rugged",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/ML574DBF?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
@@ -231,7 +233,7 @@ export const products = [
     {
         id :19,
         name : "New Balance 574 Rugged",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/ML574DBS?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",
@@ -243,7 +245,7 @@ export const products = [
     {
         id :20,
         name : "New Balance 1906",
-        brand : "new-balance",
+        brand : "New Balance",
         img : "https://images.footlocker.com/is/image/EBFL2/1906RFN?wid=213&hei=213&fmt=png-alpha",
         brandImg : {
             white : "https://zeevector.com/wp-content/uploads/New-Balance-Logo-Black-and-White.png",

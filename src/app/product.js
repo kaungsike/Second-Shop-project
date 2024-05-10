@@ -2,6 +2,7 @@ import { productGroup, productTemplate } from "../core/selector"
 
 export const createProduct = (product) => {
     const template = productTemplate.content.cloneNode(true);
+    template.querySelector(".product-card").setAttribute("product-id",product.id)
     template.querySelector(".product-img").src = product.img;
     template.querySelector(".product-title").innerText = product.name;
     template.querySelector(".product-brand-img").src = product.brandImg.white;
@@ -12,5 +13,6 @@ export const createProduct = (product) => {
 }
 
 export const productRender = (products) => {
+    productGroup.innerHTML = "";
     products.forEach((e) => productGroup.append(createProduct(e)))
 }
