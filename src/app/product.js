@@ -1,4 +1,5 @@
 import { productGroup, productTemplate } from "../core/selector"
+import { createStar } from "./star";
 
 export const createProduct = (product) => {
     const template = productTemplate.content.cloneNode(true);
@@ -8,6 +9,8 @@ export const createProduct = (product) => {
     template.querySelector(".product-brand-img").src = product.brandImg.white;
     template.querySelector(".product-price").innerText = (product.price).toFixed(2);
     template.querySelector(".product-rate").innerText = product.rating;
+
+    template.querySelector(".product-star").innerHTML = createStar(product.rating);
     
     return template;
 }
