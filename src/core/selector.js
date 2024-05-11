@@ -12,6 +12,9 @@ export const productGroup = document.querySelector("#product-group")
 export const productCartGroup = document.querySelector("#product-cart-group")
 
 
+export const productCartNumber = document.querySelector("#productCartNumber");
+export const totalCost = document.querySelector("#totalCost");
+
 
 
 
