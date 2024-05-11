@@ -9,6 +9,8 @@ export const categoryNameGroupHandler = (e) => {
     if(e.target.classList.contains("category-name")){
         // console.log(e.target.innerText);
         const currentCategoryName = e.target.innerText;
+        document.querySelector(".active")?.classList.remove("active")
+        e.target.classList.add("active")
         if(currentCategoryName==="All"){
             productRender(products)
         }

@@ -1,4 +1,4 @@
-import { productGroup, productTemplate } from "../core/selector"
+import { productCartGroup, productGroup, productTemplate } from "../core/selector"
 import { createStar } from "./star";
 
 export const createProduct = (product) => {
@@ -11,7 +11,14 @@ export const createProduct = (product) => {
     template.querySelector(".product-rate").innerText = product.rating;
 
     template.querySelector(".product-star").innerHTML = createStar(product.rating);
+
+    const isExisted = productCartGroup.querySelector(`[product-id='${product.id}']`)
     
+    if(isExisted){
+        template.querySelector(".add-to-cart-btn").setAttribute("disabled",true)
+        template.querySelector(".add-to-cart-btn").innerText = "Att to cart"
+    }
+
     return template;
 }
 
