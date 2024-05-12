@@ -18,10 +18,10 @@ export const updateTotalCost = () => {
 export const productCartRemove = (e) => {
     Swal.fire({
         title: "Are you sure?",
-        text: "You won't be able to revert this!",
+        text: "Are you sure to delete it?",
         icon: "warning",
         showCancelButton: true,
-        confirmButtonColor: "#3085d6",
+        confirmButtonColor: "#020617",
         cancelButtonColor: "#d33",
         confirmButtonText: "Yes, delete it!"
       }).then((result) => {
@@ -29,17 +29,19 @@ export const productCartRemove = (e) => {
         const currentCart = e.target.closest(".product-cart");
         const currentCartId = parseInt(currentCart.getAttribute("product-id"));
         const productCart = productGroup.querySelector(`[product-id='${currentCartId}']`)
-        const productCartBtn = productCart.querySelector(".add-to-cart-btn");
-        productCartBtn.removeAttribute("disabled");
-        productCartBtn.innerText = "Add to cart"
+        if(productCart){
+            const productCartBtn = productCart.querySelector(".add-to-cart-btn");
+            productCartBtn.removeAttribute("disabled");
+            productCartBtn.innerText = "Add to cart"
+        }
         currentCart.remove()
         updateTotalCost();
         updateProductCartNumber()
-          Swal.fire({
-            title: "Deleted!",
-            text: "Your file has been deleted.",
-            icon: "success"
-          });
+        //   Swal.fire({
+        //     title: "Deleted!",
+        //     text: "Item Deleted!",
+        //     icon: "success"
+        //   });
         }
       });
 }
@@ -50,7 +52,7 @@ export const addQuantity = (e) => {
     const price = currentCart.querySelector(".product-cart-price");
     const currentCost = currentCart.querySelector(".product-cart-cost");
     currentQuantity.innerText = parseInt(currentQuantity.innerText) + 1;
-    currentCost.innerText = currentQuantity.innerText * price.innerText
+    currentCost.innerText = (currentQuantity.innerText * price.innerText).toFixed(2)
 }
 
 export const subQuantity = (e) => {
@@ -60,7 +62,7 @@ export const subQuantity = (e) => {
     const currentCost = currentCart.querySelector(".product-cart-cost");
     if(currentQuantity.innerText >1){
         currentQuantity.innerText = parseInt(currentQuantity.innerText) - 1;
-        currentCost.innerText = currentQuantity.innerText * price.innerText
+        currentCost.innerText = (currentQuantity.innerText * price.innerText).toFixed(2)
     }
     else{
         productCartRemove(e)
