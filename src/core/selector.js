@@ -15,6 +15,8 @@ export const productCartGroup = document.querySelector("#product-cart-group")
 export const productCartNumber = document.querySelector("#productCartNumber");
 export const totalCost = document.querySelector("#totalCost");
 
+export const cartBtn = document.querySelector("#cart-btn")
+
 
 
 
