@@ -67,6 +67,7 @@ export const productGroupHandler = (e) => {
           ],500).addEventListener("finish", () => {
             animateImg.remove()
             cartBtn.classList.add("animate__animated","animate__tada");
+            updateProductCartNumber()
             cartBtn.addEventListener("animationend", () => {
                 cartBtn.classList.remove("animate__tada")
             })
@@ -77,7 +78,7 @@ export const productGroupHandler = (e) => {
           const currentProductId = parseInt(currentProductCard.getAttribute("product-id"));
           const currentProduct = products.find((el) => el.id===currentProductId) ;
           productCartGroup.append(createCartProduct(currentProduct,1));
-          updateProductCartNumber()
+    
           updateTotalCost()
     }
 }
