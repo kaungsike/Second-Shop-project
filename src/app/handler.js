@@ -79,7 +79,7 @@ export const productGroupHandler = (e) => {
           const currentProduct = products.find((el) => el.id===currentProductId) ;
           productCartGroup.append(createCartProduct(currentProduct,1));
     
-          updateTotalCost()
+        //   updateTotalCost()
     }
 }
 
@@ -93,6 +93,6 @@ export const productCartGroupHandler = (e) => {
     else if(e.target.classList.contains("cart-q-sub")){
         subQuantity(e)
     }
-    updateTotalCost()
+    // updateTotalCost()
 }
 // e.target.closest(".product-cart").remove()

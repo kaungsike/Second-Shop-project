@@ -1,6 +1,7 @@
 
 import initialRender from "./core/initialRender";
 import listener from "./core/listener";
+import observer from "./core/observer";
 
 class Shop {
     init(){
@@ -8,7 +9,9 @@ class Shop {
         
         initialRender();
 
-        listener()
+        listener();
+
+        observer()
     }
 }
 

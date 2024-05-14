@@ -1,4 +1,5 @@
-import { cartProductTemplate } from "../core/selector"
+import { updateTotalCost } from "../core/functions";
+import { cartProductTemplate, productCartGroup } from "../core/selector"
 
 export const createCartProduct = (product,quantity) => {
     const template = cartProductTemplate.content.cloneNode(true);
@@ -11,4 +12,19 @@ export const createCartProduct = (product,quantity) => {
     template.querySelector(".product-cart-price").innerText = product.price;
 
     return template;
+}
+
+
+export const productCartObserver = () => {
+    const run = () => {
+        updateTotalCost()
+    }
+
+    const observerOption = {
+        childList: true,
+        subtree: true,
+    }
+
+    const observer = new MutationObserver(run);
+    observer.observe(productCartGroup,observerOption)
 }
